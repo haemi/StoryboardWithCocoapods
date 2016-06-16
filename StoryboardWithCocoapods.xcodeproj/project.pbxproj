@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AF101D78FAB13B041703A4C /* Pods_StoryboardWithCocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53FD745782302C5D48416C3 /* Pods_StoryboardWithCocoapods.framework */; };
 		F84B826E1D12BE9B008207FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B826D1D12BE9B008207FF /* main.m */; };
 		F84B82711D12BE9B008207FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B82701D12BE9B008207FF /* AppDelegate.m */; };
 		F84B82741D12BE9B008207FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B82731D12BE9B008207FF /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58FAE2F7FC12356525F47A4D /* Pods-StoryboardWithCocoapods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryboardWithCocoapods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StoryboardWithCocoapods/Pods-StoryboardWithCocoapods.debug.xcconfig"; sourceTree = "<group>"; };
+		A9F7E60605A66A5BBB371159 /* Pods-StoryboardWithCocoapods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryboardWithCocoapods.release.xcconfig"; path = "Pods/Target Support Files/Pods-StoryboardWithCocoapods/Pods-StoryboardWithCocoapods.release.xcconfig"; sourceTree = "<group>"; };
+		B53FD745782302C5D48416C3 /* Pods_StoryboardWithCocoapods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoryboardWithCocoapods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84B82691D12BE9B008207FF /* StoryboardWithCocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardWithCocoapods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84B826D1D12BE9B008207FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F84B826F1D12BE9B008207FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF101D78FAB13B041703A4C /* Pods_StoryboardWithCocoapods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B6294C108A89907E99ED8BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B53FD745782302C5D48416C3 /* Pods_StoryboardWithCocoapods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2AAF4966E04D26755BF484C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58FAE2F7FC12356525F47A4D /* Pods-StoryboardWithCocoapods.debug.xcconfig */,
+				A9F7E60605A66A5BBB371159 /* Pods-StoryboardWithCocoapods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F84B82601D12BE9B008207FF = {
 			isa = PBXGroup;
 			children = (
 				F84B826B1D12BE9B008207FF /* StoryboardWithCocoapods */,
 				F84B826A1D12BE9B008207FF /* Products */,
+				B2AAF4966E04D26755BF484C /* Pods */,
+				7B6294C108A89907E99ED8BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F84B82801D12BE9B008207FF /* Build configuration list for PBXNativeTarget "StoryboardWithCocoapods" */;
 			buildPhases = (
+				9C7241E925E627ACBF388387 /* [CP] Check Pods Manifest.lock */,
 				F84B82651D12BE9B008207FF /* Sources */,
 				F84B82661D12BE9B008207FF /* Frameworks */,
 				F84B82671D12BE9B008207FF /* Resources */,
+				F1BF433EB94CF91264353FFE /* [CP] Embed Pods Frameworks */,
+				15C175EC8FEA225FF7538863 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15C175EC8FEA225FF7538863 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StoryboardWithCocoapods/Pods-StoryboardWithCocoapods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C7241E925E627ACBF388387 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1BF433EB94CF91264353FFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StoryboardWithCocoapods/Pods-StoryboardWithCocoapods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F84B82651D12BE9B008207FF /* Sources */ = {
@@ -261,22 +336,24 @@
 		};
 		F84B82811D12BE9B008207FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58FAE2F7FC12356525F47A4D /* Pods-StoryboardWithCocoapods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StoryboardWithCocoapods/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.allianz.StoryboardWithCocoapods;
+				PRODUCT_BUNDLE_IDENTIFIER = at.arkulpa.StoryboardWithCocoapods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		F84B82821D12BE9B008207FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F7E60605A66A5BBB371159 /* Pods-StoryboardWithCocoapods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StoryboardWithCocoapods/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.allianz.StoryboardWithCocoapods;
+				PRODUCT_BUNDLE_IDENTIFIER = at.arkulpa.StoryboardWithCocoapods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -300,6 +377,7 @@
 				F84B82821D12BE9B008207FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

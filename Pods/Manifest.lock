@@ -1,0 +1,17 @@
+PODS:
+  - ZDCChat (1.2.0.1):
+    - ZDCChat/Core (= 1.2.0.1)
+    - ZDCChat/Localization (= 1.2.0.1)
+  - ZDCChat/Core (1.2.0.1)
+  - ZDCChat/Localization (1.2.0.1):
+    - ZDCChat/Core
+
+DEPENDENCIES:
+  - ZDCChat (~> 1.2.0.1)
+
+SPEC CHECKSUMS:
+  ZDCChat: 4c68699d6414b9a6ac92960e5303982c73d6cc41
+
+PODFILE CHECKSUM: b4ba919d38784b3ae9d4c80d0d9501d5d8cf2a16
+
+COCOAPODS: 1.0.1
